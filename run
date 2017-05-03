@@ -1,0 +1,3 @@
+# uwsgi --socket 0.0.0.0:8000 -w wsgi:websocket_server --enable-threads
+
+uwsgi --http :8000 --http-websockets -w wsgi:websocket_server --enable-threads
